@@ -10,7 +10,7 @@ const CouponReveal = () => {
 
     const revealCoupon = async () => {
         try {
-            const response = await axios.post('http://localhost:8800/api/coupons/reveal', {
+            const response = await axios.post('https://couponsystem-production.up.railway.app/api/coupons/reveal', {
                 userId: '64ae0b9c1234567890abcdef',
             });
             console.log("response", response);

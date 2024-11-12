@@ -12,7 +12,7 @@ const CouponForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:8800/api/coupons', form);
+            await axios.post('https://couponsystem-production.up.railway.app/api/coupons', form);
             alert('Coupon created successfully!');
             setForm({ type: 'CouponCode', code: '', cashbackAmount: 0, description: '' });
         } catch (error) {
